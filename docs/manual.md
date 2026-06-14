@@ -6,6 +6,8 @@ title: Sixtopus — Manual
 
 **Version 2.0 · Dual Turing Machine Sequencer · 20HP · VCV Rack 2**
 
+![Sixtopus panel](sixtopusbanner.png)
+
 ---
 
 ## 👋 Welcome
