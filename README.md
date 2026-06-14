@@ -10,14 +10,16 @@ Set a few parameters. Patch it up. Listen. Respond. That's the workflow.
 
 ## ⬇️ Download & install
 
-1. Grab the latest **[release](https://github.com/apreslebip/Sixtopus/releases/latest)** for your platform:
-   - macOS — `Sixtopus-…-mac-arm64.vcvplugin` (Apple Silicon) or `…-mac-x64.vcvplugin` (Intel)
-   - Windows — `Sixtopus-…-win-x64.vcvplugin`
-   - Linux — `Sixtopus-…-lin-x64.vcvplugin`
-2. In VCV Rack 2: **Library menu → Import plugin…** and select the downloaded file (or drop it into your Rack `plugins/` folder).
-3. Restart Rack. Sixtopus appears under the **Après le bip** brand.
+1. From the **[latest release](https://github.com/apreslebip/Sixtopus/releases/latest)**, download the `.vcvplugin` for your platform:
+   - macOS Apple Silicon → `…-mac-arm64.vcvplugin`
+   - macOS Intel → `…-mac-x64.vcvplugin`
+   - Windows → `…-win-x64.vcvplugin`
+   - Linux → `…-lin-x64.vcvplugin`
+2. In VCV Rack 2, open **Help → Open user folder**. A `Rack2` folder opens.
+3. Move the downloaded file into the subfolder matching your platform — `plugins-mac-arm64`, `plugins-mac-x64`, `plugins-win-x64` or `plugins-lin-x64` (delete any older Sixtopus there first).
+4. Restart Rack. It extracts and loads the plugin on launch — Sixtopus appears under the **Après le bip** brand.
 
-Free to use. See the full **[manual](https://apreslebip.github.io/Sixtopus/manual)**.
+Free to use. Full **[manual](https://apreslebip.github.io/Sixtopus/manual)**.
 
 ---
 
