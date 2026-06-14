@@ -2,6 +2,8 @@
 
 **Dual Turing Machine Sequencer for VCV Rack 2 — 20HP**
 
+![Sixtopus panel](docs/sixtopusbanner.png)
+
 Sixtopus is a generative sequencer built for patches that think for themselves. Two independent melodic voices, four trigger channels, one shared step grid — and a Turing Machine at the heart of each melody that evolves, mutates, and surprises you in ways you'd never program by hand.
 
 Set a few parameters. Patch it up. Listen. Respond. That's the workflow.
