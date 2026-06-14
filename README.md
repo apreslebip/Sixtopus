@@ -97,17 +97,6 @@ Patch any CV source (±10V) into **CV IN**, attenuate it with **MOD ATT**, then 
 
 ---
 
-## 🛠️ Building from source
-
-```bash
-# Requires VCV Rack 2 SDK
-git clone https://github.com/apreslebip/Sixtopus
-cd Sixtopus/vcv
-make install
-```
-
----
-
 ## 📖 Manual
 
 Full documentation with patching ideas, workflow tips, and everything explained in detail → [docs/manual.md](docs/manual.md)
