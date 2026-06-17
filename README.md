@@ -66,7 +66,7 @@ Empty custom scale = quantization bypassed. The raw Turing Machine CV passes thr
 
 **RESET** — a rising edge snaps all channels back to step 1. Clean sync, every time.
 
-**Color-coded channels** — the six illuminated channel buttons tell you what's what at a glance: 🟢 green for the two DIVE voices, 🟡 yellow for the four trigger channels, 🔴 red when a channel is muted. Unselected channels blink in their colour each time they play a step, so you can watch all six work while editing one.
+**Color-coded channels** — the six illuminated channel buttons tell you what's what at a glance: 🟢 green for the two DIVE voices, 🟡 yellow for the four trigger channels, and **dark** (LED off) when a channel is muted. Unselected channels blink in their colour each time they play a step, so you can watch all six work while editing one.
 
 **Jack LEDs** — a 3mm LED above every jack flashes with activity: 🟢 green on the V/Oct outputs, 🟠 orange on the gates and triggers, 🟡 yellow on CLOCK, 🔴 red on RESET.
 
@@ -82,7 +82,7 @@ Patch any CV source (±10V) into **CV IN**, attenuate it with **MOD ATT**, then 
 
 ## 🔇 Mute
 
-**Short-tap MUTE** to silence everything instantly — tap again to bring it back (it's a latched state, saved with your patch). **Hold MUTE and press a track** to mute/unmute that individual voice — holding it on its own never mutes the module, it just turns the channel buttons into per-track mute toggles (also available from the right-click menu). A muted track lights up **red** on its button. The sequences keep evolving while muted — unmute and drop back into whatever the module has been up to.
+**Short-tap MUTE** to silence everything instantly — gates, triggers and the DIVE V/Oct (CV drops to 0V) — tap again to bring it back (it's a latched state, saved with your patch). **Hold MUTE and press a track** to mute/unmute that individual voice — holding it on its own never mutes the module, it just turns the channel buttons into per-track mute toggles (also available from the right-click menu). A muted track goes **dark** — its LED turns off. The sequences keep evolving while muted — unmute and drop back into whatever the module has been up to.
 
 ---
 

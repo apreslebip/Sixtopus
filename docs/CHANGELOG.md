@@ -6,6 +6,25 @@ title: Sixtopus — Changelog
 
 Every notable change to Sixtopus, written down so you don't have to guess.
 
+## [2.1.0] — 2026-06-17
+
+A polish pass. Nothing about the sound engine changed — but the module reads
+clearer and mutes the way you'd expect.
+
+- **Mute now cuts the pitch too.** Muting a DIVE channel (or the whole module)
+  drops its V/Oct to 0V along with the gate, instead of leaving your oscillator
+  frozen on the last note. Silence means silence.
+- **Muted means dark.** A muted track's button simply turns off now, instead of
+  glowing red — just like a single-colour panel LED would. Global mute darkens
+  all six at once; unmute and every track returns to exactly the state it was in.
+- **Channels have names.** The buttons and the Mute menu now read **Dive A,
+  Trigger 1–4, Dive B** instead of "Channel 1…6". No more counting.
+- **Scales in plain English** — Dorian, Phrygian, Lydian, Mixolydian, Locrian.
+- **A bigger, cleaner panel** — components scaled up for easier reading and
+  handling, and the little 3-way switches got a crisper look.
+
+— Après le bip
+
 ## [2.0.0] — 2026-06-14 🐙
 
 Hello world. This is the first time Sixtopus leaves the tank.

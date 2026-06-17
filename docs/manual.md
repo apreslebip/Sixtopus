@@ -69,7 +69,7 @@ STEP GRID ───────────────────────�
 | CH5 | TRIG 4 | Trigger with probability | 🟡 Yellow |
 | CH6 | DIVE B | Melodic — Turing Machine + quantizer | 🟢 Green |
 
-The illuminated buttons colour-code each channel at a glance: **green** for the two melodic DIVE voices, **yellow** for the four trigger channels. The selected channel glows bright, the others stay dim — and an unselected channel **blinks in its colour** each time it plays an active step, so you can watch all six channels working even while editing another. A channel turns **red** when it's muted.
+The illuminated buttons colour-code each channel at a glance: **green** for the two melodic DIVE voices, **yellow** for the four trigger channels. The selected channel glows bright, the others stay dim — and an unselected channel **blinks in its colour** each time it plays an active step, so you can watch all six channels working even while editing another. A muted channel goes **dark** — its LED turns off.
 
 ---
 
@@ -172,12 +172,12 @@ To set the scale: **right-click the CH1 or CH6 button** → Scale.
 | Scale | Degrees |
 |-------|---------|
 | Major | 1 2 3 4 5 6 7 |
-| Dorien | 1 2 ♭3 4 5 6 ♭7 |
-| Phrygien | 1 ♭2 ♭3 4 5 ♭6 ♭7 |
-| Lydien | 1 2 3 ♯4 5 6 7 |
-| Mixolydien | 1 2 3 4 5 6 ♭7 |
+| Dorian | 1 2 ♭3 4 5 6 ♭7 |
+| Phrygian | 1 ♭2 ♭3 4 5 ♭6 ♭7 |
+| Lydian | 1 2 3 ♯4 5 6 7 |
+| Mixolydian | 1 2 3 4 5 6 ♭7 |
 | Minor | 1 2 ♭3 4 5 ♭6 ♭7 |
-| Locrien | 1 ♭2 ♭3 4 ♭5 ♭6 ♭7 |
+| Locrian | 1 ♭2 ♭3 4 ♭5 ♭6 ♭7 |
 | **Custom** | You build it |
 
 > **Scales and MUTATE interact beautifully.** A fully random Turing Machine in Minor scale will stay melodic and moody even at maximum chaos. The quantizer is doing a lot of musical heavy lifting.
@@ -250,7 +250,7 @@ Each jack along the top row has a small 3mm LED above it, colour-coded by functi
 | CLOCK | clock in | 🟡 yellow | each incoming clock pulse |
 | RESET | reset in | 🔴 red | a reset edge arrives |
 
-While the module is globally muted, the output LEDs still flash but dimmed, so you can see the patterns running underneath the silence.
+While the module is globally muted, the output LEDs go dark along with the outputs. The step grid keeps showing the moving playhead, so you can still see the sequences running underneath the silence.
 
 ---
 
@@ -258,13 +258,13 @@ While the module is globally muted, the output LEDs still flash but dimmed, so y
 
 | | |
 |-|-|
-| **Short tap MUTE** | Toggles global mute — silences all gates and triggers. Tap again to bring them back. |
+| **Short tap MUTE** | Toggles global mute — silences all outputs: gates, triggers and the DIVE V/Oct (CV drops to 0V). Tap again to bring them back. |
 | **Hold MUTE + press a track** | Mutes/unmutes that individual track. While MUTE is held, the channel buttons become per-track mute toggles instead of selectors. |
 | **Right-click MUTE** | Same per-channel mutes, from a menu |
 
 Holding MUTE on its own never mutes the module — the hold is only there to turn the track buttons into mute toggles. Global mute is a latched state and is saved with your patch.
 
-Per-track mutes are reflected on the channel buttons: any muted track glows **red** instead of its usual green or yellow, so you can see at a glance what's silenced.
+Per-track mutes are reflected on the channel buttons: any muted track goes **dark** — its LED turns off instead of showing its usual green or yellow, so you can see at a glance what's silenced. Muting a DIVE channel also drops its V/Oct output to 0V, not just its gate.
 
 While globally muted, the sequences keep running behind the scenes. The Turing Machines keep evolving, the step counters keep moving. When you unmute, you drop back into the current state — not where you were when you muted. Sometimes that's a surprise. Usually a good one.
 
