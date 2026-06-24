@@ -6,6 +6,25 @@ title: Sixtopus — Changelog
 
 Every notable change to Sixtopus, written down so you don't have to guess.
 
+## [2.1.1] — 2026-06-24
+
+A correctness pass — and a rethink of what mute should do to pitch.
+
+- **Dive B's jacks were swapped.** V/Oct and Gate on Dive B now match the panel
+  labels (inner = V/Oct, outer = Gate), mirroring Dive A. If you'd patched around
+  it, you'll want to swap the cables back.
+- **Mute holds the note now.** Muting a DIVE channel freezes its V/Oct on the last
+  played note instead of dropping to 0V — your oscillator stays put instead of
+  slamming to the bottom. The playhead keeps running silently, and the pitch picks
+  back up, in sequence, the moment you un-mute. (This reverses the 2.1.0 behaviour,
+  which dropped the CV — turns out a held note is the kinder default.)
+- **Muted tracks step out of the way.** You can't select a muted track for editing
+  anymore; muting the one you're editing clears the selection until you pick another.
+- **The V/Oct LED reads pitch.** It's now a steady level indicator — brightness
+  tracks the held voltage — rather than a per-note flash.
+
+— Après le bip
+
 ## [2.1.0] — 2026-06-17
 
 A polish pass. Nothing about the sound engine changed — but the module reads

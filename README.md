@@ -68,7 +68,7 @@ Empty custom scale = quantization bypassed. The raw Turing Machine CV passes thr
 
 **Color-coded channels** — the six illuminated channel buttons tell you what's what at a glance: 🟢 green for the two DIVE voices, 🟡 yellow for the four trigger channels, and **dark** (LED off) when a channel is muted. Unselected channels blink in their colour each time they play a step, so you can watch all six work while editing one.
 
-**Jack LEDs** — a 3mm LED above every jack flashes with activity: 🟢 green on the V/Oct outputs, 🟠 orange on the gates and triggers, 🟡 yellow on CLOCK, 🔴 red on RESET.
+**Jack LEDs** — a 3mm LED above every jack reads the module's pulse: 🟢 green on the V/Oct outputs as a level indicator (brightness tracks the held pitch, lit continuously), 🟠 orange flashing on the gates and triggers, 🟡 yellow on CLOCK, 🔴 red on RESET.
 
 ---
 
@@ -82,7 +82,7 @@ Patch any CV source (±10V) into **CV IN**, attenuate it with **MOD ATT**, then 
 
 ## 🔇 Mute
 
-**Short-tap MUTE** to silence everything instantly — gates, triggers and the DIVE V/Oct (CV drops to 0V) — tap again to bring it back (it's a latched state, saved with your patch). **Hold MUTE and press a track** to mute/unmute that individual voice — holding it on its own never mutes the module, it just turns the channel buttons into per-track mute toggles (also available from the right-click menu). A muted track goes **dark** — its LED turns off. The sequences keep evolving while muted — unmute and drop back into whatever the module has been up to.
+**Short-tap MUTE** to silence the gates and triggers instantly — the DIVE V/Oct freezes on its last note rather than dropping to 0V, so your oscillators don't slam to the bottom — tap again to bring it back (it's a latched state, saved with your patch). **Hold MUTE and press a track** to mute/unmute that individual voice — holding it on its own never mutes the module, it just turns the channel buttons into per-track mute toggles (also available from the right-click menu). A muted track goes **dark** — its LED turns off — and is locked out of editing until you un-mute it. The sequences keep evolving while muted — unmute and drop back into whatever the module has been up to.
 
 ---
 

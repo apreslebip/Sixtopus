@@ -244,13 +244,13 @@ Each jack along the top row has a small 3mm LED above it, colour-coded by functi
 
 | LED | Jack | Colour | Lights when |
 |-----|------|--------|-------------|
-| VOCT A / B | pitch outs | 🟢 green | the voice plays a note |
+| VOCT A / B | pitch outs | 🟢 green | a level indicator — brightness tracks the held pitch, lit continuously |
 | GATE A / B | gate outs | 🟠 orange | the voice's gate fires |
 | TRIG 1–4 | trigger outs | 🟠 orange | that trigger fires |
 | CLOCK | clock in | 🟡 yellow | each incoming clock pulse |
 | RESET | reset in | 🔴 red | a reset edge arrives |
 
-While the module is globally muted, the output LEDs go dark along with the outputs. The step grid keeps showing the moving playhead, so you can still see the sequences running underneath the silence.
+While the module is globally muted, the gate and trigger LEDs go dark along with their outputs. The V/Oct LEDs stay lit on the frozen pitch — their output holds rather than dropping out. The step grid keeps showing the moving playhead, so you can still see the sequences running underneath the silence.
 
 ---
 
@@ -258,13 +258,13 @@ While the module is globally muted, the output LEDs go dark along with the outpu
 
 | | |
 |-|-|
-| **Short tap MUTE** | Toggles global mute — silences all outputs: gates, triggers and the DIVE V/Oct (CV drops to 0V). Tap again to bring them back. |
+| **Short tap MUTE** | Toggles global mute — silences the gates and triggers. The DIVE V/Oct outputs freeze on their last note (held, not dropped to 0V) so your oscillators don't slam to the bottom. Tap again to bring the gates back. |
 | **Hold MUTE + press a track** | Mutes/unmutes that individual track. While MUTE is held, the channel buttons become per-track mute toggles instead of selectors. |
 | **Right-click MUTE** | Same per-channel mutes, from a menu |
 
 Holding MUTE on its own never mutes the module — the hold is only there to turn the track buttons into mute toggles. Global mute is a latched state and is saved with your patch.
 
-Per-track mutes are reflected on the channel buttons: any muted track goes **dark** — its LED turns off instead of showing its usual green or yellow, so you can see at a glance what's silenced. Muting a DIVE channel also drops its V/Oct output to 0V, not just its gate.
+Per-track mutes are reflected on the channel buttons: any muted track goes **dark** — its LED turns off instead of showing its usual green or yellow, so you can see at a glance what's silenced. Muting a DIVE channel cuts its gate but **freezes** its V/Oct on the last played note — the playhead keeps running silently and the pitch resumes, in sequence, when you un-mute. A muted track is also locked out of editing: you can't select it, and muting the track you're currently editing clears the selection (the step grid goes dark) until you pick another.
 
 While globally muted, the sequences keep running behind the scenes. The Turing Machines keep evolving, the step counters keep moving. When you unmute, you drop back into the current state — not where you were when you muted. Sometimes that's a surprise. Usually a good one.
 
